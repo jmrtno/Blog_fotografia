@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Requiered meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/logo_head.png">
+
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="js/formulario.js"></script>
+
+    <title>Fotografía con Javi | Contacto</title>
+
+</head>
+
+
+
+<!-- MENU -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="Blog fotografia.html"><img src="img/logo_titulo.png" width="60" height="60" class="d-inline-block mr-1" alt="Fotografía con Javi">Fotografia con Javi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+
+
+  <!-- OPCIÓN DE MENU INICIO -->
+        <li class="nav-item">
+          <a class="nav-link" href="Blog fotografia.html">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+
+  <!-- OPCIÓN DE MENU GALERÍA -->   
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Galería
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="galeria_tokyo.html">Tokyo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="galeria_copenague.html">Copenague</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="galeria_madrid.html">Madrid</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="galeria_macro.html">Macro</a>
+          </div>
+        </li>
+
+  <!-- OPCIÓN DE MENU EQUIPO -->   
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Equipo
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="equipo.html#Cámaras">Cámaras</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="equipo.html#Objetivos">Objetivos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="equipo.html#Flash">Flash</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="equipo.html#Herramientas_macro">Herramientas macro</a>
+          </div>
+        </li>
+
+  <!-- OPCIÓN DE MENU CONTACTO  -->
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+
+      </ul>
+
+    </div>
+</nav>
+
+
+<!--CONTACTO-->
+
+<body>
+
+  <div class="row mt-5 mb-5">
+
+    <div class="contacto container-fluid col-lg-4">
+        <h3 class="d-inline-block pt-3">CONTACTO</h3>
+        <p>No dudes en contactar conmigo para cualquier cosa.</p>
+        <form class="input-form" action="#" id="formulario">
+            <input type="text" class=" col-6 form-control form-control-sm" name="value" id="nombre" placeholder="Nombre" required><br>
+            <input type="text" class="col-6 form-control form-control-sm" name="value" id="apellido" placeholder="Apellido" required><br>
+            <input type="text" class="col-6 form-control form-control-sm" name="value" id="email" placeholder="Email" required><br>
+            <textarea class="form-control" rows="10" name="value" id="mensaje" placeholder="Mensaje" required></textarea>
+            <input class="btn btn-primary" type="button" value="Enviar" onclick="enviar();"><br>
+            <p id="salida"></p>
+        </form>
+    </div>
+
+    <div class="ubicacion container-fluid col-lg-4">
+          <h3 class="d-inline-block pt-3">¿DONDE ESTAMOS?</h3>
+          <!--Google map-->
+      <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+        <iframe src="https://maps.google.com/maps?q=calle%20toledo%2033%20madrid&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <h6>Calle de Toledo Nº33 3º 1º, Madrid, España</h6>
+          <h6>TLF: +34 666666666</h6>
+          <h6>E-MAIL: info@gmail.com</h6>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+
+<!--FOOTER-->
+
+    <footer class="footer2 page-footer font-small pt-4 jumbotron">
+
+      <div class="container-fluid text-center text-md-left">
+  
+        <div class="row">
+  
+          <div class="col-md-4">
+            <a class="navbar-brand" href="Blog fotografia.html"><img src="img/logo_titulo.png" width="70" height="70" class=" d-inline-block aling-top" alt="Fotografía"></a>
+            <h3 class="d-inline-block pt-3">FOTOGRAFIA</h3>
+            <p>Todas las fotografías has sido tomadas por el autor y por tanto le pertenecen.</p>
+            
+          </div>
+  
+          <div class="col-md-4 mt-3">
+            <h3 class="mt-3 text-uppercase">Galeria</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="galeria_tokyo.html">Tokyo</a>
+              </li>
+              <li>
+                <a href="#">Copenague</a>
+              </li>
+              <li>
+                <a href="#">Madrid</a>
+              </li>
+              <li>
+                <a href="#">Macro</a>
+              </li>
+            </ul>
+            
+          </div>
+  
+          <div class="col-md-4 mt-3">
+            <h3 class="d-inline-block pt-3">MIS REDES</h3>
+            <p>Suscribete a mi newsletter y sígueme en mis redes sociales.</p>
+            <form class="input-form"></form>
+              <input type="text" class="form-control form-control-sm" name="value" placeholder="email">
+              <div>
+                <button class="btn btn-primary" type="button">Enviar
+              </div>
+              <br>
+            <a href="instagram.html"><img height="42px" width="42px" src="img/instagram.png"></a>	
+            <a href="facebook.html"><img src="img/facebook.png"></a>
+            <a href="twitter.html"><img src="img/twitter.png"></a>
+            <a href="youtube.html"><img height="42px" width="42px" src="img/youtube.png"></a>
+            
+          </div>
+  
+        </div>
+  
+        <p class="float-right"><a class="btn btn-dark" href="#">Ir arriba</a></p>
+  
+        <p> &copy; 2020 Javi Blog &middot; <a href="privacidad.html">Privacidad</a> &middot; <a href="contacto.html">Contacto</a></p>
+  
+    </footer>
+  
+  
+  
+  <!-- SCRIPTS BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+  </html>
+
+
+
+
+</body>
+
+
+</html>
