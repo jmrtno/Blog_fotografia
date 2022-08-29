@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h4, p {
+  font-family: arial;
+}
+
+h4 {
+  padding-bottom: 5px;
+}
+
+/*
+=============== 
+Navbar
+===============
+*/
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background: #fff;
+  font-family: arial;
+  padding-bottom: 25px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: hsl(205, 78%, 60%);
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  color: hsl(205, 86%, 17%);
+  transform: rotate(90deg);
+}
+
+.logo {
+  height: 60px;
+}
+
+.links a {
+  color: hsl(0, 0%, 45%);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  text-decoration: none;
+
+}
+
+.links a:hover {
+  background: hsl(205, 86%, 81%);
+  color: hsl(0, 0%, 0%);
+  padding-left: 1.5rem;
+  text-decoration: none;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.dropdown-btn {
+  cursor: pointer;
+}
+
+.dropdown {
+  height: 0;
+  padding-left: 100px;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  z-index: 1;
+}
+
+/* toggle class */
+.show-links {
+  height: 10rem;
+}
+
+.show-dropdown {
+  height: 8rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links {
+    height: auto;
+    display: flex;
+  }
+
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+
+  .dropdown {
+    padding-left: 0px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.3s linear;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .dropdown a {
+    margin-top: 5px;
+  }
+
+  .show-dropdown {
+    height: 5rem;
+  }
+}
+
+/*
+=============== 
+Slider
+===============
+*/
+
+.slider-container {
+  width: 80vw;
+  max-width: 80rem;
+  margin: 0 auto;
+  height: 80vh;
+  position: relative;
+}
+
+.slide-img {
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: all 0.75s ease-in-out;
+  text-align: center;
+}
+
+.slider-desc {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+.slider-desc a {
+  text-decoration: none;
+  color: white;
+  padding: auto;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.prevBtn,
+.nextBtn {
+  background: transparent;
+  font-size: 1.75rem;
+  cursor: pointer;
+  border-color: transparent;
+  text-transform: capitalize;
+  letter-spacing: 10px;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.3s linear;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  color: hsl(0, 0%, 74%);
+}
+
+/*
+=============== 
+footer
+===============
+*/
+.footer {
+  position: absolute;
+  background-color: rgb(228, 228, 228);
+  margin-top: 100px;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.footer-container a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+/*ESTILOS PÁGINA DE COTACTO*/
+
+.contacto {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.footer2 {
+  margin-bottom: -10px;
+
+}
