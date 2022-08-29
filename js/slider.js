@@ -20,12 +20,13 @@ const title = document.getElementById('title');
 const desc = document.getElementById('desc');
 const prevBtn = document.querySelector(".prevBtn");
 const nextBtn = document.querySelector(".nextBtn");
+const slide = document.getElementById('slide')
 
 // next/prev slide btn
-nextBtn.addEventListener('click', function () {
+nextBtn.addEventListener('click', () => {
   nextSlide()
 });
-prevBtn.addEventListener('click', function () {
+prevBtn.addEventListener('click', () => {
   prevSlide();
 });
 
@@ -42,7 +43,7 @@ function displaySlider() {
 };
 
 // next/prev functions
-let nextSlide = function () {
+let nextSlide = () => {
   currentItem++;
   if (currentItem > sliderImgs.length - 1) {
     currentItem = 0;
@@ -50,7 +51,7 @@ let nextSlide = function () {
   displaySlider();
 };
 
-let prevSlide = function () {
+let prevSlide = () => {
   currentItem--;
   if (currentItem < 0) {
     currentItem = sliderImgs.length - 1;
@@ -58,6 +59,11 @@ let prevSlide = function () {
   displaySlider();
 };
 
-setInterval(function () {
-  nextSlide()
-}, 5000);
+let initSlide = setInterval(() => { nextSlide() }, 3000);
+
+slide.addEventListener('mouseover', () => {
+  clearInterval(initSlide);
+})
+slide.addEventListener('mouseout', () => {
+  initSlide = setInterval(() => { nextSlide() }, 3000);
+})
