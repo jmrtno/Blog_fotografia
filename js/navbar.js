@@ -1,4 +1,4 @@
-const galeries = [
+const galleries = [
   {
     title: 'Tokio',
     href: 'galerytokyo.html',
@@ -19,7 +19,7 @@ const dropdownBtn = document.querySelector('.dropdown-btn');
 const dropdowns = document.querySelector('.dropdown');
 
 window.addEventListener("DOMContentLoaded", function () {
-  displayDropdown(galeries);
+  displayDropdown(galleries);
 });
 
 navToggle.addEventListener('click', function () {
@@ -31,8 +31,8 @@ dropdownBtn.addEventListener('click', function () {
 });
 
 
-function displayDropdown(galeryItems) {
-  let displayDrop = galeryItems.map(function (item) {
+function displayDropdown(galleryItems) {
+  let displayDrop = galleryItems.map(function (item) {
     return `<a href=${item.href}>${item.title}</a>`;
   });
   displayDrop = displayDrop.join("");
