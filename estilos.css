@@ -282,7 +282,7 @@ Galleries
   gap: 10px;
 }
 
-.image-gallery > li {
+.image-gallery>li {
   height: 300px;
   cursor: pointer;
   position: relative;
@@ -344,6 +344,7 @@ Open big imgs
   justify-content: center;
   z-index: 1;
 }
+
 .full-img span {
   font-family: sans-serif;
   position: absolute;
@@ -353,20 +354,22 @@ Open big imgs
   color: #fff;
   cursor: pointer;
 }
+
 .full-img img {
-  position: absolute; 
+  position: absolute;
   display: block;
   max-width: 100%;
   max-height: 100%;
   margin: auto;
   width: auto;
   height: auto;
+<<<<<<< HEAD
   padding: 4% 4% 4% 4%;  
 
+=======
+  padding: 2% 2% 2% 2%;
+>>>>>>> 03ef11eba65c8e35245e9c063bf181d6ed429c53
 }
-
-
-
 
 /*ESTILOS PÁGINA DE COTACTO*/
 
