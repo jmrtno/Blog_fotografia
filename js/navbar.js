@@ -1,15 +1,15 @@
 const galleries = [
   {
     title: 'Tokio',
-    href: 'galerytokyo.html',
+    href: 'gallerytokyo.html',
   },
   {
     title: 'Dinamarca',
-    href: '#',
+    href: 'gallerydenmark.html',
   },
   {
     title: 'Macro',
-    href: '#',
+    href: 'gallerymacro.html',
   },
 ];
 

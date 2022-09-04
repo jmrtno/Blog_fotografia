@@ -1,14 +1,3 @@
-const gallery = [];
-
-for (let i = 1; i <= 35; i++) {
-  gallery.push(
-    {
-      title: "Tokyo " + i,
-      img: "./img/tokio/tokyo" + i + ".jpg",
-    }
-  ) * i;
-};
-
 const imageGallery = document.querySelector('.image-gallery');
 const fullImg = document.querySelector('.full-img');
 const img = document.getElementById('img');
