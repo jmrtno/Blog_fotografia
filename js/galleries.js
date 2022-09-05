@@ -1,6 +1,9 @@
 const imageGallery = document.querySelector('.image-gallery');
 const fullImg = document.querySelector('.full-img');
 const img = document.getElementById('img');
+const closeImg = document.getElementById('close-img');
+document.oncontextmenu = noContextMenu;
+
 
 // load items
 window.addEventListener("DOMContentLoaded", () => {
@@ -25,7 +28,11 @@ function openFullImg(reference) {
   img.src = reference;
 };
 
-function closeImg() {
+closeImg.addEventListener("click", () =>{
   fullImg.style.display = "none";
-};
+});
+
+function noContextMenu() {
+  return false;
+}
 
