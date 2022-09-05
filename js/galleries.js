@@ -1,7 +1,7 @@
 const imageGallery = document.querySelector('.image-gallery');
-const fullImg = document.querySelector('.full-img');
-const img = document.getElementById('img');
-const closeImg = document.getElementById('close-img');
+const modal = document.getElementById('myModal');
+const modalImg = document.getElementById('full-img');
+const closeImg = document.getElementById('close-modal');
 document.oncontextmenu = noContextMenu;
 
 
@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
 function displayGalleryItems(galleryItems) {
   let displayGallery = galleryItems.map(function (item) {
     return `<li>
-              <img src=${item.img} alt=${item.title} onclick="openFullImg(this.src)"/>
+              <img src=${item.img} alt=${item.title} id="myImg"/>
               <div class="item-info">
                 <span>${item.title}</span>
               </div>
@@ -21,15 +21,18 @@ function displayGalleryItems(galleryItems) {
   });
   displayGallery = displayGallery.join("");
   imageGallery.innerHTML = displayGallery;
+
+  const img = document.querySelectorAll("#myImg");
+  img.forEach(function (item) {
+    item.addEventListener('click', () =>{
+      modal.style.display = "flex";
+      modalImg.src = item.src;
+    })
+  })
 };
 
-function openFullImg(reference) {
-  fullImg.style.display = "flex";
-  img.src = reference;
-};
-
-closeImg.addEventListener("click", () =>{
-  fullImg.style.display = "none";
+closeImg.addEventListener("click", () => {
+  modal.style.display = "none";
 });
 
 function noContextMenu() {

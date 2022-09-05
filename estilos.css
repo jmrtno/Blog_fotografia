@@ -332,7 +332,7 @@ Galleries
 Open big imgs 
 ==============
 */
-.full-img {
+.modal {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
@@ -345,7 +345,7 @@ Open big imgs
   z-index: 1;
 }
 
-.full-img span {
+#close-modal {
   font-family: sans-serif;
   position: absolute;
   top: 5%;
@@ -355,7 +355,7 @@ Open big imgs
   cursor: pointer;
 }
 
-.full-img img {
+#full-img {
   position: absolute;
   display: block;
   max-width: 100%;
