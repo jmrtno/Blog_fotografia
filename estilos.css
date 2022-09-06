@@ -32,6 +32,7 @@ nav {
   background: #fff;
   font-family: arial;
   padding-bottom: 30px;
+  padding-right: 25px;
 }
 
 .nav-header {
@@ -81,29 +82,25 @@ nav {
 .links {
   height: 0;
   overflow: hidden;
-  transition: all 0.3s linear;
+  transition: all 0.5s linear;
 }
 
 .dropdown-btn {
   cursor: pointer;
 }
 
-.dropdown {
+.dropdown-content {
   height: 0;
   padding-left: 100px;
   position: absolute;
   overflow: hidden;
-  transition: all 0.3s linear;
+  transition: all 0.5s linear;
   z-index: 1;
 }
 
 /* toggle class */
 .show-links {
   height: 10rem;
-}
-
-.show-dropdown {
-  height: 8rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -139,22 +136,19 @@ nav {
     background: transparent;
   }
 
-  .dropdown {
+  .dropdown-content {
     padding-left: 0px;
     height: 0;
+    max-height: 5rem;
     overflow: hidden;
     position: absolute;
-    transition: all 0.3s linear;
+    transition: all 0.5s linear;
     background-color: transparent;
     z-index: 1;
   }
 
-  .dropdown a {
+  .dropdown-content a {
     margin-top: 5px;
-  }
-
-  .show-dropdown {
-    height: 5rem;
   }
 }
 

@@ -2,17 +2,20 @@ const sliderImgs = [
   {
     background: "background-image: url('img/banner1.jpg');",
     title: 'TOKYO',
-    desc: 'Maravillas al otro lado del mundo.'
+    desc: 'Maravillas al otro lado del mundo.',
+    href: 'gallerytokyo.html',
   },
   {
     background: "background-image: url('img/banner2.jpg');",
     title: 'SCANDINAVIA',
-    desc: 'Un ambiente único.'
+    desc: 'Un ambiente único.',
+    href: 'galleryscandinavia.html',
   },
   {
     background: "background-image: url('img/banner3.jpg');",
     title: 'MACRO',
-    desc: 'Un mundo que se escapa a simple vista.'
+    desc: 'Un mundo que se escapa a simple vista.',
+    href: 'gallerymacro.html',
   },
 ]
 const img = document.querySelector('.slide-img');
@@ -20,7 +23,8 @@ const title = document.getElementById('title');
 const desc = document.getElementById('desc');
 const prevBtn = document.querySelector(".prevBtn");
 const nextBtn = document.querySelector(".nextBtn");
-const slide = document.getElementById('slide')
+const slide = document.getElementById('slide');
+const href = document.getElementById('href');
 
 // next/prev slide btn
 nextBtn.addEventListener('click', () => {
@@ -40,6 +44,7 @@ function displaySlider() {
   img.style = slider.background;
   title.textContent = slider.title;
   desc.textContent = slider.desc;
+  href.href = slider.href;
 };
 
 // next/prev functions
