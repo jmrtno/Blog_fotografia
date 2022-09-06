@@ -4,8 +4,8 @@ const galleries = [
     href: 'gallerytokyo.html',
   },
   {
-    title: 'Dinamarca',
-    href: 'gallerydenmark.html',
+    title: 'Scandinavia',
+    href: 'galleryscandinavia.html',
   },
   {
     title: 'Macro',
