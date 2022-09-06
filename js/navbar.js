@@ -26,26 +26,6 @@ navToggle.addEventListener('click', () => {
   links.classList.toggle('show-links');
 });
 
-// dropdownBtn.addEventListener('mouseover', function () {
-//   dropdowns.style.overflow = 'visible';
-//   dropdowns.style.height = '8rem';
-// });
-
-// dropdownBtn.addEventListener('mouseout', function () {
-//   dropdowns.style.overflow = 'hidden';
-//   dropdowns.style.height = '0rem';
-// });
-
-// dropdowns.addEventListener('mouseover', function () {
-//   dropdowns.style.overflow = 'visible';
-//   dropdowns.style.height = '8rem';
-// });
-
-// dropdowns.addEventListener('mouseout', function () {
-//   dropdowns.style.overflow = 'hidden';
-//   dropdowns.style.height = '0rem';
-// });
-
 [dropdownBtn, dropdowns].forEach(item => {
   item.addEventListener('mouseover', () => {
     dropdowns.style.overflow = 'visible';
