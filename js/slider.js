@@ -6,7 +6,7 @@ const sliderImgs = [
   },
   {
     background: "background-image: url('img/banner2.jpg');",
-    title: 'DENMARK',
+    title: 'SCANDINAVIA',
     desc: 'Un ambiente único.'
   },
   {
