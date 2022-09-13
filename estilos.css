@@ -29,10 +29,14 @@ ul {
 }
 
 nav {
+  top: 0;
+  width: 100%;
+  position: fixed;
   background: #fff;
   font-family: arial;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-right: 25px;
+  z-index: 999;
 }
 
 .nav-header {
@@ -94,7 +98,6 @@ nav {
   padding-left: 100px;
   position: absolute;
   overflow: hidden;
-  transition: all 0.5s linear;
   z-index: 1;
 }
 
@@ -129,6 +132,8 @@ nav {
   .links a {
     padding: 0;
     margin: 0 0.5rem;
+    transition: all 0.5s linear;
+
   }
 
   .links a:hover {
@@ -143,7 +148,6 @@ nav {
     overflow: hidden;
     position: absolute;
     transition: all 0.5s linear;
-    background-color: transparent;
     z-index: 1;
   }
 
@@ -159,11 +163,12 @@ Slider
 */
 
 .slider-container {
-  width: 80vw;
-  max-width: 80rem;
-  margin: 0 auto;
-  height: 80vh;
   position: relative;
+  width: 70vw;
+  height: 80vh;
+  left: 15%;
+  margin-top: 130px;
+  margin-bottom: 60px;
 }
 
 .slide-img {
@@ -222,16 +227,17 @@ footer
 ===============
 */
 .footer {
-  position: absolute;
+  position:static;
+  bottom: 0;
   background-color: rgb(228, 228, 228);
-  margin-top: 100px;
   width: 100%;
   justify-content: center;
 }
 
 .footer-container {
   text-align: center;
-  margin: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .footer-container a {
@@ -254,6 +260,7 @@ Galleries
   font-size: 2rem;
   text-align: center;
   margin-bottom: 4rem;
+  margin-top: 130px;
 }
 
 .underline {
@@ -358,20 +365,4 @@ Open big imgs
   width: auto;
   height: auto;
   padding: 4% 4% 4% 4%;  
-}
-
-/*ESTILOS PÁGINA DE COTACTO*/
-
-.contacto {
-  margin-top: 100px;
-  margin-left: 50px;
-}
-
-.btn {
-  margin-top: 10px;
-}
-
-.footer2 {
-  margin-bottom: -10px;
-
 }
