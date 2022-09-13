@@ -98,12 +98,13 @@ nav {
   padding-left: 100px;
   position: absolute;
   overflow: hidden;
+  background-color: #fff;
   z-index: 1;
 }
 
 /* toggle class */
 .show-links {
-  height: 10rem;
+  height: 4.5rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -148,6 +149,7 @@ nav {
     overflow: hidden;
     position: absolute;
     transition: all 0.5s linear;
+    background-color: transparent;
     z-index: 1;
   }
 
