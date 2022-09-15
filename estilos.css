@@ -34,9 +34,8 @@ nav {
   position: fixed;
   background: #fff;
   font-family: arial;
-  padding-bottom: 20px;
   padding-right: 25px;
-  z-index: 999;
+  z-index: 1;
 }
 
 .nav-header {
@@ -108,6 +107,9 @@ nav {
 }
 
 @media screen and (min-width: 800px) {
+  nav {
+    padding-bottom: 20px;
+  }
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
