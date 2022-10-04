@@ -46,4 +46,11 @@
     displayDrop = displayDrop.join("");
     dropdowns.innerHTML = displayDrop;
   }
+
+  // preloader
+  const preloader = document.querySelector(".preloader");
+  window.addEventListener('load', () => {
+    preloader.classList.add('hide-preloader');
+  });
+  
 })()
